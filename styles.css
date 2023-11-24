@@ -40,6 +40,10 @@ form input {
 
 }
 
+#header {
+  text-align: center;
+}
+
 ::placeholder {
   padding-top: 10px;
   flex-wrap: wrap;

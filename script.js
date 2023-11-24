@@ -22,6 +22,10 @@ async function promis () {
     display.innerHTML = " "
   }
 
+ if(keyword === ""){
+  display.innerHTML = `<h2 id="header">please enter something in the field provided</h2>`
+ }
+
  
   const results = data.results
   results.map((result)=>{
