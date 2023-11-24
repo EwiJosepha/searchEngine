@@ -73,11 +73,11 @@ form input {
 
 #display {
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  /* background-size: 400% 400%; */
+  background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   transition: transform 0.3s ease-in-out;
-
 }
+
 
 @keyframes gradientAnimation {
   0% {
@@ -91,20 +91,12 @@ form input {
   }
 }
 
-/* #display {
-} */
-
-#display:hover {
-  transform: scale(1.1);
-}
-
-
-
 #display img {
   width: 100%;
   object-fit: cover;
   height: 230px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #search-more {
