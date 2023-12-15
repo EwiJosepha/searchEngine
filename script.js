@@ -5,12 +5,14 @@ const searchresult = document.getElementById('search-result')
 const display = document.getElementById('display')
 const btn = document.getElementById('btn')
 const shownorebtn = document.getElementById('search-more')
+const dispa = document.getElementById("displa")
 
-let keyword = " "
+let keyword = ""
 let page= 1
 
 async function promis () {
   keyword = inputfield.value
+ 
   const url= `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesskey}&per_page=12 `
 
   const response = await fetch(url)
@@ -20,6 +22,12 @@ async function promis () {
   if(page === 1){
     display.innerHTML = " "
   }
+
+ if(keyword === ""){
+  dispa.innerHTML = `<h2 id="s">please enter something in the field provided</h2>`
+ }
+
+ 
   const results = data.results
   results.map((result)=>{
     const image = document.createElement('img')
