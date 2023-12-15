@@ -5,6 +5,7 @@ const searchresult = document.getElementById('search-result')
 const display = document.getElementById('display')
 const btn = document.getElementById('btn')
 const shownorebtn = document.getElementById('search-more')
+const dispa = document.getElementById("displa")
 
 let keyword = ""
 let page= 1
@@ -23,7 +24,7 @@ async function promis () {
   }
 
  if(keyword === ""){
-  display.innerHTML = `<h2 id="header">please enter something in the field provided</h2>`
+  dispa.innerHTML = `<h2 id="s">please enter something in the field provided</h2>`
  }
 
  

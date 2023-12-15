@@ -42,6 +42,7 @@ form input {
 
 #header {
   text-align: center;
+  color: white;
 }
 
 ::placeholder {
@@ -104,7 +105,7 @@ form input {
 }
 
 #search-more {
-  background-color: #ff1493;
+  background-color: #8a1b56;
   color: #fff;
   border: 0;
   outline: none;
