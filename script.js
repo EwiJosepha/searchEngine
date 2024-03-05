@@ -5,7 +5,7 @@ const searchresult = document.getElementById('search-result')
 const display = document.getElementById('display')
 const btn = document.getElementById('btn')
 const shownorebtn = document.getElementById('search-more')
-const dispa = document.getElementById("displa")
+const newDisplay = document.getElementById("displa")
 
 let keyword = ""
 let page= 1
@@ -17,14 +17,13 @@ async function promis () {
 
   const response = await fetch(url)
   const data = await response.json()
-  // console.log(data);
-
-  if(page === 1){
+  
+ if(page === 1){
     display.innerHTML = " "
   }
 
  if(keyword === ""){
-  dispa.innerHTML = `<h2 id="s">please enter something in the field provided</h2>`
+  newDisplay.innerHTML = `<h2 id="s">please enter something in the field provided before hiting the search button</h2>`
  }
 
  
@@ -51,7 +50,7 @@ inputt.addEventListener('submit', (e)=>{
 shownorebtn.addEventListener("click", ()=>{
   page++;
   console.log(page);
- promis()
+  promis()
 })
 
 
